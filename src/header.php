@@ -10,17 +10,25 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <div id="page" class="hfeed site">
-    <div id="wrap-header" class="wrap-header">
-      <header id="masthead" class="site-header">
-        <div class="site-branding">
-          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-          <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-        </div>
-        <button id="responsive-menu-toggle"><?php _e( 'Menu', 'voidx' ); ?></button>
-        <nav id="site-navigation" class="site-navigation">
-          <div id="responsive-menu"><?php wp_nav_menu( array( 'theme_location' => 'header', 'menu_id' => 'menu-header', 'menu_class' => 'menu-inline' ) ); ?></div>
+      <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+          <a class="navbar-brand" href="<?php home_url(); ?>"><?php bloginfo('title'); ?></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav-wrap collapse navbar-collapse justify-content-end" id="navbarsExample05">
+              <?php 
+              $defaults = array(
+              'container'       => 'ul',
+              'theme_location'  => 'header',
+              'depth'           => 1,
+              'menu_class'      => 'header-nav navbar-nav',
+            );
+
+            wp_nav_menu( $defaults );
+            ?>
+          </div>
         </nav>
       </header>
     </div>
-    <div id="wrap-main" class="wrap-main">
+    <div id="wrap-main" class="container-fluid">

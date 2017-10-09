@@ -1,7 +1,3 @@
-<div id="wrap-sidebar" class="wrap-sidebar">
-  <?php if ( is_active_sidebar( 'sidebar-main' ) ) { ?>
-    <div id="secondary" class="widget-area" role="complementary">
-      <?php dynamic_sidebar( 'sidebar-main' ); ?>
-    </div>
-  <?php } ?>
-</div>
+<aside class="col col-md-2">
+	<h1>Sidebar</h1>
+</aside>

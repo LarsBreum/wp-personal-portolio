@@ -9,8 +9,6 @@
 // Configuration variables and settings
 @import "config";
 
-// Library: mixins, functions, etc. specific to this theme
-@import "library";
 
 /*!
 Theme Name: #{metadata(theme-name)}
@@ -26,16 +24,10 @@ Text Domain: #{metadata(theme-text-domain)}
 Domain Path: #{metadata(theme-text-domain-path)}
 */
 
-// Reset: eliminate default browser styling (optional; commented out by default)
-//@import "reset";
-
 // Normalize: make browsers render things more consistently
 @import "normalize";
-
 // Everything else
-@import "helpers";
-@import "general";
-@import "layout";
-@import "menus";
-@import "navigation";
-@import "sidebar";
+@import 'vars';
+@import 'base';
+@import 'header';
+@import "nav";

@@ -1,0 +1,19 @@
+.header-nav {
+	justify-content: space-between;
+		a {
+			padding: 10px;
+			color: $color-accent-main;
+			text-decoration: none;
+		&:hover {
+			font-weight: bold;
+
+		}
+	}
+}
+.navbar-brand {
+	color: orange;
+	font-size: 1.5em;
+	&:hover {
+		color: $color-accent-main;
+	}
+}
