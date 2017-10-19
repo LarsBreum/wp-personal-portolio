@@ -5,3 +5,26 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	color: $color-heading-main;
 }
+a {
+	color: $color-accent-main;
+}
+.post {
+	padding: 10px;
+	.card {
+		padding: 10px;
+	}
+}
+.post-categories {
+	display: inline;
+	padding: 0;
+	li {
+		list-style-type: none;
+		display: inline;
+	}
+}
+.post-img {
+	max-width: 100%;
+	img {
+		max-width: 100%;
+	}
+}

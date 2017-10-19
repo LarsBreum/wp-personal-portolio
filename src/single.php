@@ -13,5 +13,5 @@
   </main>
 <?php get_sidebar(); ?>
 </div>
-<h1>index</h1>
+<h1>single.php</h1>
 <?php get_footer(); ?>

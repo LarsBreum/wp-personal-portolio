@@ -2,7 +2,7 @@
 <div class="container content-wrap row">
   <main class="col col-md-10">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <h1><?php the_title(); ?></h1>
+    <a href="<?php get_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
     <div class="card">
       <p><?php the_content(); ?></p>
     </div>
@@ -13,5 +13,5 @@
   </main>
 <?php get_sidebar(); ?>
 </div>
-
+<h1>index</h1>
 <?php get_footer(); ?>

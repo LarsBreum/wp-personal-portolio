@@ -50,3 +50,5 @@ add_action( 'widgets_init', 'lb_widgets_init' );
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
+//thumbnail support
+add_theme_support( 'post-thumbnails' ); 
