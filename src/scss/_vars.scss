@@ -3,3 +3,22 @@
 $color-bg-main: #252525;
 $color-accent-main: #ffa500;
 $color-heading-main: #020202;
+
+$gutter: 10px;
+
+//Breakpoints
+$br-sm: 576px;
+$br-md: 768px;
+$br-lg: 992px;
+$br-xl: 1200px;
+
+$max-width: $br-sm;
+@media screen and (min-width: $br-md) {
+	$max-width: $br-md;
+}
+@media screen and (min-width: $br-lg) {
+	$max-width: $br-lg;
+}
+@media screen and (min-width: $br-xl) {
+	$max-width: $br-xl;
+}

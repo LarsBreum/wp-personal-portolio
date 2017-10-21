@@ -8,10 +8,18 @@ h1,h2,h3,h4,h5,h6 {
 a {
 	color: $color-accent-main;
 }
+.posts {
+	justify-content: center;
+	align-items: flex-start;
+}
 .post {
-	padding: 10px;
-	.card {
-		padding: 10px;
+	padding: $gutter;
+}
+.card {
+	margin: $gutter;
+	width: 100%;
+		@media screen and (min-width: $br-md) {
+		flex: 1 0 per-line(2);
 	}
 }
 .post-categories {
