@@ -1,6 +1,20 @@
 body {
 	background: $color-bg-main;
 }
+#wrap-main {
+	padding: 0;
+}
+main {
+	flex: initial;
+}
+.content-wrap {
+	margin: 0;
+	padding: 0;
+	display: block;
+	@media screen and (min-width: $br-md) {
+		display: flex;
+	}
+}
 
 h1,h2,h3,h4,h5,h6 {
 	color: $color-heading-main;
@@ -11,6 +25,8 @@ a {
 .posts {
 	justify-content: center;
 	align-items: flex-start;
+	margin: 0 auto;
+	padding: 0;
 }
 .post {
 	padding: $gutter;
