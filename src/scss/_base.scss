@@ -3,6 +3,7 @@ body {
 }
 #wrap-main {
 	padding: 0;
+	max-width: $br-lg;
 }
 main {
 	flex: initial;
@@ -30,10 +31,11 @@ a {
 }
 .post {
 	padding: $gutter;
+	margin: $gutter;
 }
 .card {
-	margin: $gutter;
 	width: 100%;
+	padding: $gutter;
 		@media screen and (min-width: $br-md) {
 		flex: 1 0 per-line(2);
 	}

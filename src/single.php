@@ -2,8 +2,8 @@
 <div class="container content-wrap row">
   <main class="col col-md-10">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <a href="<?php get_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
-    <div class="card">
+    <div class="card post">
+    <h1><?php the_title(); ?></h1>
       <p><?php the_content(); ?></p>
     </div>
 

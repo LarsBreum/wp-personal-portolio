@@ -12,12 +12,12 @@
 <body <?php body_class(); ?>>
       <header>
         <nav class="navbar navbar-expand-lg bg-dark">
-          <a class="navbar-brand" href="<?php home_url(); ?>"><?php bloginfo('title'); ?></a>
+          <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('title'); ?></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="nav-wrap collapse navbar-collapse justify-content-end" id="navbarsExample05">
-              <?php 
+              <?php
               $defaults = array(
               'container'       => 'ul',
               'theme_location'  => 'header',

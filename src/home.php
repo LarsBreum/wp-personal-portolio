@@ -3,14 +3,14 @@
   <main class="col col-md-10 row posts">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="post col-md-6 card">
-      <a href="<?php get_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
+      <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
       <div class="post-img">
-        <a href="<?php get_permalink(); ?>">
+        <a href="<?php the_permalink(); ?>">
         <?php the_post_thumbnail(); ?>
       </a>
       </div>
       <span class="byline">By: <strong><?php the_author(); ?></strong>, On: <strong><?php the_date(); ?></strong>, In: <strong><?php the_category(); ?></strong>
-        <p><?php the_excerpt(); ?><a href="<?php get_permalink(); ?>">Read more...</a></p>
+        <p><?php the_excerpt(); ?><a href="<?php the_permalink(); ?>">Read more...</a></p>
   </div>
     <?php endwhile; else : ?>
       <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
