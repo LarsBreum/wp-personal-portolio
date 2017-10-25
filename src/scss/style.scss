@@ -34,7 +34,10 @@ Domain Path: #{metadata(theme-text-domain-path)}
 	$g-total: $items * $g-pct;
 	@return (100% / $items) - $g-total;
 }
-
+%max-width {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 // Normalize: make browsers render things more consistently
 @import "normalize";
 // Everything else

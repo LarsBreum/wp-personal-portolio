@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container content-wrap row">
-  <main class="col col-md-10 row posts">
+  <main class="col col-md-9 row posts">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="post col-md-6 card">
       <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>

@@ -1,4 +1,5 @@
 .header-nav {
+	max-width: 1200px;
 	justify-content: space-between;
 		a {
 			padding: 10px;
@@ -16,4 +17,7 @@
 	&:hover {
 		color: $color-accent-main;
 	}
+}
+.navbar {
+	@extend %max-width;
 }

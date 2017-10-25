@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container content-wrap row">
-  <main class="col col-md-10">
+  <main class="col col-md-9">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="card post">
     <h1><?php the_title(); ?></h1>

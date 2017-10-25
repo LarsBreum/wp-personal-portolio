@@ -1,0 +1,1 @@
+{"version":3,"sources":["sidebar.scss"],"names":[],"mappings":"AACA,QACE,eAAiB,CAClB","file":"sidebar.css","sourcesContent":["\r\n.widget {\r\n  margin-top: 10px;\r\n}\r\n"]}

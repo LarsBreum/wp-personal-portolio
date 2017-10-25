@@ -40,7 +40,7 @@ function lb_widgets_init() {
     'name'          => __( 'Main sidebar', 'lb' ),
     'id'            => 'sidebar-main',
     'description'   => __( 'Appears to the right side of most posts and pages.', 'lb' ),
-    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'before_widget' => '<div id="%1$s" class="widget %2$s card">',
     'after_widget'  => '</div>',
     'before_title'  => '<h2>',
     'after_title'   => '</h2>'
@@ -51,4 +51,4 @@ add_action( 'widgets_init', 'lb_widgets_init' );
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
 //thumbnail support
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
